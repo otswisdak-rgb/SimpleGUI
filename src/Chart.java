@@ -54,6 +54,11 @@ public class Chart extends PageComponent {
         return new ChartPanel();
     }
 
+    public void set(String[] keys, Number[] values) {
+        this.keys = keys;
+        this.values = values;
+    }
+
     // Inner class that does the actual drawing
     private class ChartPanel extends JPanel {
         public ChartPanel() {
