@@ -80,7 +80,7 @@ class Dashboard
         APanel.add(BPanel);
         APanel.add(CPanel);
     }
-
+    //Supposed to update the statcards and charts with more data added
     public void update()
     {
         StatCard netCalories = new StatCard("Total amount of calories", 
