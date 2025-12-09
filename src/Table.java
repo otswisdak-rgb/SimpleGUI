@@ -2,16 +2,15 @@
 
 import java.awt.BorderLayout;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.util.ArrayList;
-import java.awt.Dimension;
+import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
-import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.BorderFactory;
 
 public class Table extends PageComponent {
     private JTable table;
@@ -93,25 +92,25 @@ public class Table extends PageComponent {
         }
     }
 
-   public int getSelectedRowIndex() {
-       return table.getSelectedRow();
-   }
-
-   public void addRowSelectionListener(ListSelectionListener listener) {
-       table.getSelectionModel().addListSelectionListener(listener);
-   }
-
-   public int getRowCount() {
-       return model.getRowCount();
-   }
-
-   /**
-    * Returns the original Rowable objects that were added to the table.
-    * This is much more useful than getting raw data.
-    */
-   public Object[] getTableData() {
-       return originalObjects.toArray();
-   }
+//    public int getSelectedRowIndex() {
+//        return table.getSelectedRow();
+//    }
+//
+//    public void addRowSelectionListener(ListSelectionListener listener) {
+//        table.getSelectionModel().addListSelectionListener(listener);
+//    }
+//
+//    public int getRowCount() {
+//        return model.getRowCount();
+//    }
+//
+//    /**
+//     * Returns the original Rowable objects that were added to the table.
+//     * This is much more useful than getting raw data.
+//     */
+//    public Object[] getTableData() {
+//        return originalObjects.toArray();
+//    }
 
     @Override
     public Component getAwtComponent() {
